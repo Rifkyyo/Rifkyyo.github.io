@@ -12,7 +12,38 @@ html, body {
   padding: 0;
 }
 
-.navbar {
+
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 3px solid black;
+  background-color: #00cfff;
+  
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: aquamarine;
+}
+
+/* .navbar {
   background-color: #54e3f6;
   box-shadow: 20px black;
   border: 3px solid black;
@@ -73,6 +104,101 @@ html, body {
   border: 5px solid black;
 }
 
+ */
+ /* navbar baru */
+ .fContainer {
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  width: 100%;
+  height: 100vh;
+  background-color: lightslategray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 100%;
+  height: 80px;
+  background-color:#00cfff;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+  border: 3px solid black;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+.firstname {
+  color:  black;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lastname {
+  color: crimson;
+  font-weight: 400;
+  padding-left: 4px;
+  font-style: italic;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation > li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.navigation > li > a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.navigation > li > a:hover {
+  color: crimson;
+}
+
+.navigation > li > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.navigation > li > img:hover {
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+}
+
+.active:hover {
+  background-color: crimson;
+  color: white;
+  padding: 15px;
+}
+
+.active:hover {
+  color: white !important;
+}
+
 
 
 /* content-1 */
@@ -99,13 +225,11 @@ html, body {
 }
 
 .img {
-    max-width: 100%;
-    height: 700px;
     border-radius: 100px;
     /* border: 3px solid black; */
      padding: 20px; /* Ubah padding agar lebih proporsional */
-  width: 90%; /* Atur lebar agar hampir penuh dengan .content-5 */
-  height: 90%; /* Atur tinggi agar hampir penuh dengan .content-5 */
+  width: 50%; /* Atur lebar agar hampir penuh dengan .content-5 */
+  height: 50%; /* Atur tinggi agar hampir penuh dengan .content-5 */
   display: flex; /* Tambahkan ini */
   justify-content: center; /* Tambahkan ini */
   align-items: center; /* Tambahkan ini */
@@ -159,7 +283,7 @@ html, body {
     border: 3px solid black;
     padding: 20px;
     font-size: 45px;
-    background-color: #00cfff; /* Warna latar belakang serupa dengan bagian atas */
+    background-color: crimson; /* Warna latar belakang serupa dengan bagian atas */
     text-align: center;
     padding: 20px;
     margin-top: 20px;

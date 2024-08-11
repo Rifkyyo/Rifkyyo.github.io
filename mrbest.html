@@ -35,7 +35,7 @@
 
 <!-- sound -->
 
-   <div class="navbar">
+   <!-- <div class="navbar">
     <div class="navbar-container">
         <div class="logo">
             <img class="logo-efek" src="">
@@ -46,7 +46,7 @@
             <li><a href="#">icon2</a></li>
             <li><a href="#">icon3</a></li>
             <li><a href="#">icon4</a></li> -->
-        </ul>
+        <!-- </ul>
         <div class="social-icons">
             <a class="icons" href="mrbest.html">BERANDA</a>
             <a class="icons"href="#">RIFKY PONSEL</a>
@@ -54,14 +54,33 @@
             <a class="icons"href="intro.html">INTRO/OUTRO</a>
         </div>
     </div>
-   </div> 
+   </div>  --> 
 <!-- end navbar mrbest -->
 
-<div class="content-1">
+ <div class="fContainer">
+      <nav class="wrapper">
+        <div class="brand">
+          <div class="firstname">neng</div>
+          <div class="lastname">via</div>
+        </div>
+        <ul class="navigation">
+          <li><a href="mrbest.html" class="active">HOME</a></li>
+          <li><a href="onepiece.html" class="active">KOMIK</a></li>
+          <li><a href="#" class="active">TOKO</a></li>
+          <li><a href="intro.html" class="active">INTRO</a></li> 
+          <!-- <ul><li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li></ul> -->
+          <li>
+          </li>
+          </ul>
+      </nav> 
+
+
+<!-- <div class="content-1">
     <div class="container">
         <img class="img" src="C:\Users\RIFKYYO!!\Pictures\gambar donload\393059-bleach-2021-manga-ichigo-4k-pc-wallpaper.jpg">
-        <!-- <button class="btn">ADA APA?</button> -->
-    </div>
+        <button class="btn">ADA APA?</button> -->
+      
+    </div> 
 </div>
 <div class="content-2">
     <marquee class="text2" scrollamount="30">MAU APA?       &nbsp;&nbsp;&nbsp;&nbsp;  MAU APA? &nbsp;&nbsp;&nbsp;&nbsp;   MAU APA?  &nbsp;&nbsp;&nbsp;&nbsp;  MAU APA? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   MAU KONTOOL!!</marquee>
@@ -260,4 +279,24 @@
 <!-- end-content-6 -->
 
 </body>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
 </html>
